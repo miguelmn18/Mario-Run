@@ -36,10 +36,16 @@
 
 }
 
-.alert-game-over{
-    opacity: 0;
-    display: none;
+#gameOverScreen {
+  display: none; /* começa invisível */
+  position: fixed; /* cobre a tela inteira */
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 50%;
+  margin: 0 auto;
 }
+
 
 @keyframes cloudsAnimation {
     from{

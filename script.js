@@ -1,6 +1,6 @@
 const mario = document.querySelector(".mario");
 const pipe = document.querySelector(".pipe");
-const alerGameOver = document.getSelection(".alert-game-over");
+const alertGameOver = document.getElementById("gameOverScreen")
 
 const jump = () => {
     mario.classList.add("jump");
@@ -28,16 +28,16 @@ const loop = setInterval(() => {
         pipe.style.animation = 'none';
         pipe.style.left = `${pipePosition}px`;
 
-         mario.style.animation = 'none';
+        mario.style.animation = 'none';
         mario.style.bottom = `${marioPosition}px`;
 
-        mario.src = "imagens/game-over.png ";
-        mario.style.width = "75px";
+        mario.src = "imagens/game-over.png";
+        
+        mario.style.width = "150px";
         mario.style.marginLeft = "50px";
-        alerGameOver.style.display = block;
-        alertGameOver.style.opacity = 1;
         
-        
+        alertGameOver.style.display = "flex";
+        alertGameOver.style.marginLeft = "500px";
         
 
         clearInterval(loop);
